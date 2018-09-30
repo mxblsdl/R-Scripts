@@ -17,6 +17,7 @@ alphabet_links<-tolower(alphabet_links) # establishes end of url that applies to
 playerStats<-tibble()
 for (i in 1:25) {
 BBall.url <- paste0("https://www.basketball-reference.com/players/",alphabet_links[i],"/")
+BBall.Pages<-read_html(BBall.url)
 
 # Get the artist rank
 BBnames<- html_nodes(BBall.Pages, "th a")
