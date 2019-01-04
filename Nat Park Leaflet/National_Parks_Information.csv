@@ -1,0 +1,61 @@
+Lat,Lon,name,visitors,acres,kilometers,link
+44.35,-68.21,Acadia,"3,509,271","49,075.26 acres",(198.6 km2),https://en.wikipedia.org/wiki/Acadia_National_Park
+-14.25,-170.68,American Samoa,"69,468","8,256.67 acres",(33.4 km2),https://en.wikipedia.org/wiki/National_Park_of_American_Samoa
+38.68,-109.57,Arches,"1,539,028","76,678.98 acres",(310.3 km2),https://en.wikipedia.org/wiki/Arches_National_Park
+43.75,-102.50,Badlands,"1,054,325","242,755.94 acres",(982.4 km2),https://en.wikipedia.org/wiki/Badlands_National_Park
+29.25,-103.25,Big Bend,"440,276","801,163.21 acres","(3,242.2 km2)",https://en.wikipedia.org/wiki/Big_Bend_National_Park
+25.65,-80.08,Biscayne,"446,961","172,971.11 acres",(700.0 km2),https://en.wikipedia.org/wiki/Biscayne_National_Park
+38.57,-107.72,Black Canyon of the Gunnison,"307,143","30,780.76 acres",(124.6 km2),https://en.wikipedia.org/wiki/Black_Canyon_of_the_Gunnison_National_Park
+37.57,-112.18,Bryce Canyon,"2,571,684","35,835.08 acres",(145.0 km2),https://en.wikipedia.org/wiki/Bryce_Canyon_National_Park
+38.2,-109.93,Canyonlands,"742,271","337,597.83 acres","(1,366.2 km2)",https://en.wikipedia.org/wiki/Canyonlands_National_Park
+38.20,-111.17,Capitol Reef,"1,150,165","241,904.50 acres",(979.0 km2),https://en.wikipedia.org/wiki/Capitol_Reef_National_Park
+32.17,-104.44,Carlsbad Caverns,"520,026","46,766.45 acres",(189.3 km2),https://en.wikipedia.org/wiki/Carlsbad_Caverns_National_Park
+34.01,-119.42,Channel Islands,"383,687","249,561.00 acres","(1,009.9 km2)",https://en.wikipedia.org/wiki/Channel_Islands_National_Park
+33.78,-80.78,Congaree,"159,595","26,539.22 acres",(107.4 km2),https://en.wikipedia.org/wiki/Congaree_National_Park
+42.94,-122.1,Crater Lake,"711,749","183,224.05 acres",(741.5 km2),https://en.wikipedia.org/wiki/Crater_Lake_National_Park
+41.24,-81.55,Cuyahoga Valley,"2,226,879","32,572.35 acres",(131.8 km2),https://en.wikipedia.org/wiki/Cuyahoga_Valley_National_Park
+36.24,-116.82,Death Valley,"1,294,827","3,373,063.14 acres","(13,650.3 km2)",https://en.wikipedia.org/wiki/Death_Valley_National_Park
+63.33,-150.50,Denali,"642,809","4,740,911.16 acres","(19,185.8 km2)",https://en.wikipedia.org/wiki/Denali_National_Park_and_Preserve
+24.63,-82.87,Dry Tortugas,"54,281","64,701.22 acres",(261.8 km2),https://en.wikipedia.org/wiki/Dry_Tortugas_National_Park
+25.32,-80.93,Everglades,"1,018,557","1,508,934.25 acres","(6,106.4 km2)",https://en.wikipedia.org/wiki/Everglades_National_Park
+67.78,-153.30,Gates of the Arctic,"11,177","7,523,897.45 acres","(30,448.1 km2)",https://en.wikipedia.org/wiki/Gates_of_the_Arctic_National_Park_and_Preserve
+38.63,-90.19,Gateway Arch,"1,398,188",192.83 acres,(0.8 km2),https://en.wikipedia.org/wiki/Gateway_Arch_National_Park
+48.80,-114.00,Glacier,"3,305,512","1,013,125.99 acres","(4,100.0 km2)",https://en.wikipedia.org/wiki/Glacier_National_Park_(U.S.)
+58.50,-137.00,Glacier Bay,"547,057","3,223,383.43 acres","(13,044.6 km2)",https://en.wikipedia.org/wiki/Glacier_Bay_National_Park_and_Preserve
+36.06,-112.14,Grand Canyon,"6,254,238","1,201,647.03 acres","(4,862.9 km2)",https://en.wikipedia.org/wiki/Grand_Canyon_National_Park
+43.73,-110.80,Grand Teton,"3,317,000","310,044.22 acres","(1,254.7 km2)",https://en.wikipedia.org/wiki/Grand_Teton_National_Park
+38.98,-114.30,Great Basin,"168,028","77,180.00 acres",(312.3 km2),https://en.wikipedia.org/wiki/Great_Basin_National_Park
+37.73,-105.51,Great Sand Dunes,"486,935","107,341.87 acres",(434.4 km2),https://en.wikipedia.org/wiki/Great_Sand_Dunes_National_Park_and_Preserve
+35.68,-83.53,Great Smoky Mountains,"11,338,893","522,426.88 acres","(2,114.2 km2)",https://en.wikipedia.org/wiki/Great_Smoky_Mountains_National_Park
+31.92,-104.87,Guadalupe Mountains,"225,257","86,367.10 acres",(349.5 km2),https://en.wikipedia.org/wiki/Guadalupe_Mountains_National_Park
+20.72,-156.17,Haleakalā,"1,112,390","33,264.62 acres",(134.6 km2),https://en.wikipedia.org/wiki/Haleakal%C4%81_National_Park
+19.38,-155.20,Hawaiʻi Volcanoes,"2,016,702","323,431.38 acres","(1,308.9 km2)",https://en.wikipedia.org/wiki/Hawai%CA%BBi_Volcanoes_National_Park
+34.51,-93.05,Hot Springs,"1,561,616","5,548.01 acres",(22.5 km2),https://en.wikipedia.org/wiki/Hot_Springs_National_Park
+48.10,-88.55,Isle Royale,"28,196","571,790.30 acres","(2,314.0 km2)",https://en.wikipedia.org/wiki/Isle_Royale_National_Park
+33.79,-115.90,Joshua Tree,"2,853,619","790,635.74 acres","(3,199.6 km2)",https://en.wikipedia.org/wiki/Joshua_Tree_National_Park
+58.50,-155.00,Katmai,"37,818","3,674,529.33 acres","(14,870.3 km2)",https://en.wikipedia.org/wiki/Katmai_National_Park_and_Preserve
+59.92,-149.65,Kenai Fjords,"303,598","669,650.05 acres","(2,710.0 km2)",https://en.wikipedia.org/wiki/Kenai_Fjords_National_Park
+36.80,-118.55,Kings Canyon,"692,932","461,901.20 acres","(1,869.2 km2)",https://en.wikipedia.org/wiki/Kings_Canyon_National_Park
+67.55,-159.28,Kobuk Valley,"15,500","1,750,716.16 acres","(7,084.9 km2)",https://en.wikipedia.org/wiki/Kobuk_Valley_National_Park
+60.97,-153.42,Lake Clark,"22,755","2,619,816.49 acres","(10,602.0 km2)",https://en.wikipedia.org/wiki/Lake_Clark_National_Park_and_Preserve
+40.49,-121.51,Lassen Volcanic,"507,256","106,589.02 acres",(431.4 km2),https://en.wikipedia.org/wiki/Lassen_Volcanic_National_Park
+37.18,-86.10,Mammoth Cave,"587,853","54,011.91 acres",(218.6 km2),https://en.wikipedia.org/wiki/Mammoth_Cave_National_Park
+37.18,-108.49,Mesa Verde,"613,788","52,485.17 acres",(212.4 km2),https://en.wikipedia.org/wiki/Mesa_Verde_National_Park
+46.85,-121.75,Mount Rainier,"1,415,867","236,381.64 acres",(956.6 km2),https://en.wikipedia.org/wiki/Mount_Rainier_National_Park
+48.70,-121.20,North Cascades,"30,326","504,780.94 acres","(2,042.8 km2)",https://en.wikipedia.org/wiki/North_Cascades_National_Park
+47.97,-123.50,Olympic,"3,401,996","922,649.41 acres","(3,733.8 km2)",https://en.wikipedia.org/wiki/Olympic_National_Park
+35.07,-109.78,Petrified Forest,"627,757","221,390.21 acres",(895.9 km2),https://en.wikipedia.org/wiki/Petrified_Forest_National_Park
+36.48,-121.16,Pinnacles,"233,334","26,685.73 acres",(108.0 km2),https://en.wikipedia.org/wiki/Pinnacles_National_Park
+41.30,-124.00,Redwood,"445,000","138,999.37 acres",(562.5 km2),https://en.wikipedia.org/wiki/Redwood_National_and_State_Parks
+40.40,-105.58,Rocky Mountain,"4,437,215","265,795.20 acres","(1,075.6 km2)",https://en.wikipedia.org/wiki/Rocky_Mountain_National_Park
+32.25,-110.50,Saguaro,"964,760","91,715.72 acres",(371.2 km2),https://en.wikipedia.org/wiki/Saguaro_National_Park
+36.43,-118.68,Sequoia,"1,291,256","404,062.63 acres","(1,635.2 km2)",https://en.wikipedia.org/wiki/Sequoia_National_Park
+38.53,-78.35,Shenandoah,"1,458,874","199,217.77 acres",(806.2 km2),https://en.wikipedia.org/wiki/Shenandoah_National_Park
+46.97,-103.45,Theodore Roosevelt,"708,003","70,446.89 acres",(285.1 km2),https://en.wikipedia.org/wiki/Theodore_Roosevelt_National_Park
+18.33,-64.73,Virgin Islands,"304,408","14,940.00 acres",(60.5 km2),https://en.wikipedia.org/wiki/Virgin_Islands_National_Park
+48.50,-92.88,Voyageurs,"237,250","218,200.15 acres",(883.0 km2),https://en.wikipedia.org/wiki/Voyageurs_National_Park
+43.57,-103.48,Wind Cave,"619,924","33,970.84 acres",(137.5 km2),https://en.wikipedia.org/wiki/Wind_Cave_National_Park
+61.00,-142.00,Wrangell–St. Elias,"68,292","8,323,146.48 acres","(33,682.6 km2)",https://en.wikipedia.org/wiki/Wrangell%E2%80%93St._Elias_National_Park_and_Preserve
+44.60,-110.50,Yellowstone,"4,116,524","2,219,790.71 acres","(8,983.2 km2)",https://en.wikipedia.org/wiki/Yellowstone_National_Park
+37.83,-119.50,Yosemite,"4,336,890","761,747.50 acres","(3,082.7 km2)",https://en.wikipedia.org/wiki/Yosemite_National_Park
+37.30,-113.05,Zion,"4,504,812","147,237.02 acres",(595.8 km2),https://en.wikipedia.org/wiki/Zion_National_Park

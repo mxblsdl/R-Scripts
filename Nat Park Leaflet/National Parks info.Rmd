@@ -1,0 +1,95 @@
+---
+title: "National Park Web Scraping"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+#knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r setup, include=FALSE}
+require(tidyverse)
+require(rvest)
+require(data.table)
+```
+
+This will be for scraping data from the Wikipedia page on National Parks and outputing a csv of that information
+
+Fist setting the base url where the information will come from.
+```{r}
+base_url<-"https://en.wikipedia.org/wiki/List_of_national_parks_of_the_United_States"
+webpage<-read_html(base_url)
+```
+
+
+Using CSS selector to identify information fro the page.
+
+```{r}
+location <- html_nodes(webpage, ".geo-dec")
+location<-html_text(location)
+location<-t(as.data.table(strsplit(location, split = " ")))
+location<- location %>%
+gsub(pattern = "°N", replacement = "") %>%
+  gsub(pattern = "°W", replacement = "") %>%
+  gsub(pattern = "14.25°S", replacement = "-14.25") #American Samoa is the only S lat and needs to be negative to be read later on
+location[,2]<- paste("-", location[,2], sep = "")
+head(location)
+```
+
+```{r echo=FALSE}
+# Needs to be edited down
+name<-html_nodes(webpage,"tbody tr :nth-child(1) a")
+name<- html_text(name)
+name # Picked up a lot of extra stuff and need to edit down
+name<-name[134:193]
+
+## Adding in the link to the Wiki page
+link<-html_nodes(webpage,"tbody tr :nth-child(1) a")
+link<-html_attr(link, name = "href", default = NA)
+link<-paste("https://en.wikipedia.org",link[134:193], sep="")
+
+```
+
+Getting the size and doing some editing on the data
+```{r}
+size<- html_nodes(webpage, "td:nth-child(5)")
+size<- html_text(size, trim = F)
+size<-as.data.table(strsplit(size, split ="♠"))
+size<-t(size[2,])
+size<-as.vector(size)
+size<-gsub(pattern = "\n", replacement = "", size)
+
+#I;m sure there is a cleaner way to do this...
+size1<-size %>%
+  strsplit(split = " ") %>%
+  as.data.table()
+
+acres<-paste(size1[1,], size1[2,])
+kilometers<-as_vector(size1[3,])
+
+cbind(acres, size1[3,])
+acres
+```
+Lastly the number of visitors per year
+```{r}
+visitors<-html_nodes(webpage, "td:nth-child(6)") %>%
+  html_text() %>%
+  gsub(pattern = "\n", replacement = "")
+```
+
+
+Try to put it all together in a data frame
+```{r}
+NatParks<-cbind(location, name, visitors, acres, kilometers, link) %>%
+  as.data.frame(stringsAsFactors=F, row.names = F) %>%
+  rename(Lat = V1) %>%
+  rename(Lon = V2)
+head(NatParks)
+```
+
+Outputing a csv to be used in leaflet
+```{r}
+# write_csv(NatParks, "National_Parks_Information.csv")
+```
+
+

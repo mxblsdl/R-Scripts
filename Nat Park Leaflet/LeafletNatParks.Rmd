@@ -1,0 +1,64 @@
+---
+title: "National Park Markers"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+This will be for using leaflet to create interactive markers for a leaflet based HTML widget. The html map will eventually be embedded on my website.
+
+```{r, include=FALSE}
+require(leaflet)
+require(htmltools)
+```
+Read in the national park information that was previously created. 
+```{r, include=FALSE}
+NatParks<-read.csv("NatParks.Leaflet/National_Parks_Information.csv", stringsAsFactors = F)
+head(NatParks)
+```
+Load up a leaflet map and add markers.
+```{r, include=FALSE}
+test<-leaflet(options =  leafletOptions(minZoom = 3, maxZoom = 12)) %>%
+  addTiles() %>%
+  addMarkers(lng = NatParks$Lon, lat = NatParks$Lat)
+
+test
+```
+
+I need to create a set of content popups for the Nat Parks.
+```{r, include=FALSE}
+content <- paste("<a href=",NatParks[,7],">",NatParks[,3],"</a><br/>Size",NatParks[,5],"<br/>Visitors Pr Year",NatParks[1,4])
+
+```
+
+
+Now I want to add in popup with information about the parks
+```{r, include=FALSE}
+t<-leaflet(NatParks, options = leafletOptions(minZoom = 3, maxZoom = 13)) %>%
+  addProviderTiles(providers$OpenTopoMap) %>%
+  addMarkers(~Lon,~Lat, popup = paste("<a href=",NatParks[,7],">",NatParks[,3],"</a><br/>Size",NatParks[,5],"<br/>Visitors Pr Year",NatParks[,4])
+ )
+t
+```
+This code chunk gets at the HTML of the markers and allows for CSS styling.
+```{r, echo=FALSE}
+browsable(
+  tagList(list(
+    tags$head(
+      tags$style(
+        ".leaflet-popup-content-wrapper {
+    background: white;
+    color: black;
+    padding: 1px;
+    border-radius: 25px;
+    }
+        "
+      )
+    ),
+    t
+  ))
+)
+
+```
+

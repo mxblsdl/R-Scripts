@@ -1,0 +1,35 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+require(leaflet)
+require(htmltools)
+require(magrittr)
+
+NatParks<-read.csv("National_Parks_Information.csv", stringsAsFactors = F)
+head(NatParks)
+
+t<-leaflet(NatParks, options = leafletOptions(minZoom = 3, maxZoom = 13)) %>%
+  addProviderTiles(providers$OpenTopoMap) %>%
+  addMarkers(~Lon,~Lat, popup = paste("<a href=",NatParks[,7],"target=_blank>",NatParks[,3],"</a><br/>Size",NatParks[,5],"<br/>Visitors Per Year",NatParks[,4])
+ )
+t
+```
+
+```{r, echo=FALSE}
+browsable(
+  tagList(list(
+    tags$head(
+      tags$style(
+        ".leaflet-popup-content-wrapper {
+        background: white;
+        color: black;
+        padding: 1px;
+        border-radius: 25px;
+        }
+        "
+      )
+      ),
+    t
+      ))
+  )
+```
